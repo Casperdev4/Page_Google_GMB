@@ -56,6 +56,73 @@ img {
     padding: 0 20px;
 }
 
+/* Promo Bar */
+.promo-bar {
+    background: var(--gradient);
+    color: var(--white);
+    text-align: center;
+    padding: 18px 20px;
+    font-size: 14px;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo-bar .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo-bar p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.promo-code {
+    background: var(--white);
+    color: var(--primary);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 700;
+    margin-left: 3px;
+}
+
+@media (max-width: 768px) {
+    .promo-bar {
+        padding: 20px 15px 14px;
+        font-size: 14px;
+        top: 80px;
+    }
+    .promo-code {
+        padding: 3px 8px;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .promo-bar {
+        padding: 22px 10px 14px;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+    .promo-code {
+        padding: 2px 6px;
+        margin-left: 3px;
+        font-size: 11px;
+    }
+}
+
 .btn {
     display: inline-block;
     padding: 14px 32px;
@@ -258,7 +325,7 @@ img {
 }
 
 .hero {
-    padding: 160px 0 100px;
+    padding: 200px 0 100px;
     background: linear-gradient(180deg, #f8f9ff 0%, var(--white) 100%);
     overflow: hidden;
 }
@@ -1182,11 +1249,11 @@ img {
 
 @media (max-width: 480px) {
     .hero {
-        padding: 100px 0 40px;
+        padding: 170px 0 40px;
     }
 
     .hero-content h1 {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .btn {
